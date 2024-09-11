@@ -32,8 +32,8 @@ To work with the code in this repository, you will need:
 - I want to express my gratitude to the numerous authors and contributors whose work has been invaluable in my learning process. 
 
 ## Contributing
-This repository is intended for personal learning, and contributions are not currently being accepted.
--If you have suggestions or feedback, feel free to reach out.
+- This repository is intended for personal learning, and contributions are not currently being accepted.
+- If you have suggestions or feedback, feel free to reach out.
 
 ## Cloning the Repository
 
