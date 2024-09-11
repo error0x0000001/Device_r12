@@ -66,17 +66,25 @@ PRODUCT_COPY_FILES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Properties
-include $(LOCAL_PATH)/properties/default.mk
+include $(DEVICE_PATH)/configs/properties/default.mk
 
 # RIL
 PRODUCT_PACKAGES += \
     Ims \
     QtiTelephony
-    
+
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.3
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
