@@ -26,16 +26,16 @@ To work with the code in this repository, you will need:
 - A basic understanding of embedded systems and device trees.
 - Tools to build and manage device tree configurations, such as a cross-compiler and device tree compiler.
 
-### Acknowledgments
+## Acknowledgments
 
 -Open Source Community: Thanks to the community for their contributions and support.
 -I want to express my gratitude to the numerous authors and contributors whose work has been invaluable in my learning process. 
 
-### Contributing
+## Contributing
 This repository is intended for personal learning, and contributions are not currently being accepted.
 -If you have suggestions or feedback, feel free to reach out.
 
-### Cloning the Repository
+## Cloning the Repository
 
 To clone this repository to your local machine, use the following command:
 
