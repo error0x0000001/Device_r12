@@ -7,11 +7,11 @@
 DEVICE_PATH := device/xiaomi/sky
 
 # SHIPPING API
-PRODUCT_SHIPPING_API_LEVEL := 33
-BOARD_SHIPPING_API_LEVEL := 31
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 32
+PRODUCT_EXTRA_VNDK_VERSIONS := 32
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -54,6 +54,13 @@ PRODUCT_PACKAGES += \
     sg_write_buffer \
     f2fs_io \
     check_f2fs
+
+# Input
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
+    $(DEVICE_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-goodix.idc \
+    $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
+    $(DEVICE_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
