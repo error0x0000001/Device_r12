@@ -28,8 +28,8 @@ To work with the code in this repository, you will need:
 
 ## Acknowledgments
 
--Open Source Community: Thanks to the community for their contributions and support.
--I want to express my gratitude to the numerous authors and contributors whose work has been invaluable in my learning process. 
+- Open Source Community: Thanks to the community for their contributions and support.
+- I want to express my gratitude to the numerous authors and contributors whose work has been invaluable in my learning process. 
 
 ## Contributing
 This repository is intended for personal learning, and contributions are not currently being accepted.
@@ -40,6 +40,6 @@ This repository is intended for personal learning, and contributions are not cur
 To clone this repository to your local machine, use the following command:
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/error0x0000001/Device_r12.git
 
 
