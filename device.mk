@@ -68,6 +68,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
+# RIL
+PRODUCT_PACKAGES += \
+    Ims \
+    QtiTelephony
+    
 # Rootdir
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
@@ -76,6 +81,27 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils-prd \
+    qti_telephony_utils_prd.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Update engine
 PRODUCT_PACKAGES += \
